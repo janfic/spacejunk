@@ -1,0 +1,61 @@
+
+spaceSkin.png
+size: 1024,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+font export
+  rotate: false
+  xy: 1, 793
+  size: 334, 76
+  orig: 334, 76
+  offset: 0, 0
+  index: -1
+button_down
+  rotate: false
+  xy: 1, 1
+  size: 24, 16
+  split: 13, 10, 7, 8
+  pad: 9, 9, 3, 3
+  orig: 24, 16
+  offset: 0, 0
+  index: -1
+button_over
+  rotate: false
+  xy: 259, 775
+  size: 24, 16
+  split: 13, 10, 7, 8
+  pad: 9, 9, 3, 3
+  orig: 24, 16
+  offset: 0, 0
+  index: -1
+button_up
+  rotate: false
+  xy: 337, 853
+  size: 24, 16
+  split: 13, 10, 7, 8
+  pad: 9, 9, 3, 3
+  orig: 24, 16
+  offset: 0, 0
+  index: -1
+profont10pxItalics_0
+  rotate: false
+  xy: 1, 19
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+profont10px_0
+  rotate: false
+  xy: 1, 277
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1
+profont16px_0
+  rotate: false
+  xy: 1, 535
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1

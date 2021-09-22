@@ -15,15 +15,16 @@ import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 public class Player extends SpaceActor {
 
     DirectionIndicator arrow;
-    float arrowRotation;
+    float arrowRotation, arrowDirection;
 
     public Player() {
-        super(new Texture("astronaut.png"), new Rectangle());
-        this.hitbox = new Rectangle(0, 0, texture.getWidth(), texture.getHeight());
+        super(new Texture(Gdx.files.internal("astronaut.png")), new Rectangle());
+        this.hitbox = new Rectangle(8, 8, texture.getWidth() - 16, texture.getHeight() - 16);
         setSize(texture.getWidth(), texture.getHeight());
         this.arrow = new DirectionIndicator();
         this.setOrigin(texture.getWidth() / 2, texture.getHeight() / 2);
-        this.addAction(Actions.forever(Actions.rotateBy(360, 4)));
+        arrowDirection = 1;
+        //this.addAction(Actions.forever(Actions.rotateBy(360, 4)));
     }
 
     @Override
@@ -36,10 +37,11 @@ public class Player extends SpaceActor {
             v = v.rotateDeg(arrowRotation);
             vx = v.x;
             vy = v.y;
+            arrowDirection = -arrowDirection;
         } else {
-            arrowRotation += -180 * delta;
-            if (arrowRotation >= 360) {
-                arrowRotation = 360 - arrowRotation;
+            arrowRotation += 180 * delta * arrowDirection;
+            if (arrowRotation > 360) {
+                arrowRotation = arrowRotation - 360;
             }
             if (arrowRotation < 0) {
                 arrowRotation = arrowRotation + 360;
