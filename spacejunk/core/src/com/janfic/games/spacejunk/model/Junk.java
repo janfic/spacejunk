@@ -1,7 +1,7 @@
 package com.janfic.games.spacejunk.model;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.math.Rectangle;
+import com.badlogic.gdx.math.Polygon;
 
 /**
  *
@@ -9,7 +9,7 @@ import com.badlogic.gdx.math.Rectangle;
  */
 public class Junk extends SpaceActor {
 
-    public Junk(Texture texture, Rectangle hitbox) {
+    public Junk(Texture texture, Polygon hitbox) {
         super(texture, hitbox);
     }
 }

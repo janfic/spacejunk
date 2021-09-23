@@ -7,8 +7,8 @@ repeat: none
 font export
   rotate: false
   xy: 1, 793
-  size: 334, 76
-  orig: 334, 76
+  size: 396, 76
+  orig: 396, 76
   offset: 0, 0
   index: -1
 button_down
@@ -31,7 +31,7 @@ button_over
   index: -1
 button_up
   rotate: false
-  xy: 337, 853
+  xy: 399, 853
   size: 24, 16
   split: 13, 10, 7, 8
   pad: 9, 9, 3, 3

@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Buttons;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Batch;
+import com.badlogic.gdx.math.Polygon;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
@@ -18,13 +19,15 @@ public class Player extends SpaceActor {
     float arrowRotation, arrowDirection;
 
     public Player() {
-        super(new Texture(Gdx.files.internal("astronaut.png")), new Rectangle());
-        this.hitbox = new Rectangle(8, 8, texture.getWidth() - 16, texture.getHeight() - 16);
+        super(new Texture(Gdx.files.internal("astronaut.png")), new Polygon());
+        this.hitbox = new Polygon(new float[]{0, 0, 0, texture.getHeight() - 16, texture.getWidth() - 16, texture.getHeight() - 16, texture.getWidth() - 16, 0,});
+        this.hitbox.setOrigin((texture.getWidth() - 16) / 2, (texture.getHeight() - 16) / 2);
         setSize(texture.getWidth(), texture.getHeight());
         this.arrow = new DirectionIndicator();
         this.setOrigin(texture.getWidth() / 2, texture.getHeight() / 2);
         arrowDirection = 1;
-        //this.addAction(Actions.forever(Actions.rotateBy(360, 4)));
+//        this.addAction(Actions.forever(Actions.rotateBy(360, 4)));
+        this.addAction(Actions.rotateBy(-180));
     }
 
     @Override

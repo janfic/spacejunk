@@ -62,25 +62,6 @@ atlasData: {
 	]
 	fontDrawables: [
 		{
-			file: E:/PROJECTS/spacejunk/art/font export.png
-			bgColor: {
-				r: 1
-				g: 1
-				b: 1
-				a: 1
-			}
-			tint: null
-			tintName: null
-			name: font export
-			tiled: false
-			minWidth: -1
-			minHeight: -1
-			customized: false
-			tenPatchData: null
-			type: FONT
-			hidden: false
-		}
-		{
 			file: E:/RESOURCES/assets/fonts/profont16px_0.png
 			bgColor: {
 				r: 0
@@ -129,6 +110,25 @@ atlasData: {
 			tint: null
 			tintName: null
 			name: profont10pxItalics_0
+			tiled: false
+			minWidth: -1
+			minHeight: -1
+			customized: false
+			tenPatchData: null
+			type: FONT
+			hidden: false
+		}
+		{
+			file: E:/PROJECTS/spacejunk/art/font export.png
+			bgColor: {
+				r: 1
+				g: 1
+				b: 1
+				a: 1
+			}
+			tint: null
+			tintName: null
+			name: font export
 			tiled: false
 			minWidth: -1
 			minHeight: -1

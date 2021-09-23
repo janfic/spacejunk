@@ -37,7 +37,7 @@ com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
 }
 com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
 	default: {
-		font: profont10pxItalics
+		font: profont10px
 		fontColor: RGBA_255_255_255_255
 		up: button_up
 		down: button_down
