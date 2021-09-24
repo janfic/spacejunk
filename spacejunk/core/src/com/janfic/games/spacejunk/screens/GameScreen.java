@@ -53,7 +53,7 @@ public class GameScreen implements Screen {
 
     @Override
     public void show() {
-        this.playStage = new Stage(new FitViewport(Gdx.graphics.getWidth() / 4, Gdx.graphics.getHeight() / 4));
+        this.playStage = new Stage(new FitViewport(Gdx.graphics.getWidth() / 3, Gdx.graphics.getHeight() / 3));
         this.uiStage = new Stage(new FitViewport(Gdx.graphics.getWidth() / 2, Gdx.graphics.getHeight() / 2));
         Skin skin = new Skin(Gdx.files.internal("spaceSkin.json"));
         Table uiTable = new Table();
